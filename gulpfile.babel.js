@@ -87,6 +87,17 @@ gulp.task('extras', () => {
   }).pipe(gulp.dest('dist'));
 });
 
+
+// Replace
+var replace = require('gulp-replace');
+
+gulp.task('replace-path', function(){
+  gulp.src(['app/index.html'])
+    .pipe(replace('pages-bld', 'swear'))
+    .pipe(gulp.dest('dist/'));
+});
+
+
 // File Include
 var fileinclude = require('gulp-file-include');
 
@@ -173,7 +184,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'include'], () => {
+gulp.task('build', ['lint', 'html', 'images', 'fonts', 'replace-path', 'extras', 'include'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
