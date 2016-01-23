@@ -4,18 +4,12 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+@import "variables/_colors.scss";
+@import "variables/_mixins.scss";
 
-/* Space out content a bit */
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+@import "variables/_base.scss";
+@import "variables/_fuck-it.scss";
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
