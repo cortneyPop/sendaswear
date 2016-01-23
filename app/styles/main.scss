@@ -5,10 +5,10 @@ $icon-font-path: '../fonts/';
 // endbower
 
 @import "variables/_colors.scss";
-@import "variables/_mixins.scss";
 
-@import "variables/_base.scss";
-@import "variables/_fuck-it.scss";
+@import "_base.scss";
+@import "_fuck-it.scss";
+@import "_g-dangit.scss";
 
 
 /* Responsive: Portrait tablets and up */
