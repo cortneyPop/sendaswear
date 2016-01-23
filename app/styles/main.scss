@@ -5,6 +5,9 @@ $icon-font-path: '../fonts/';
 // endbower
 
 @import "variables/_colors.scss";
+@import "variables/_typography.scss";
+@import "variables/_mq.scss";
+
 
 @import "_base.scss";
 @import "_fuck-it.scss";

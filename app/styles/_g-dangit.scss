@@ -1,6 +1,26 @@
+// Styles for g-dang it page
 .g-dangit {
-    color: #336EE8;
-    text-align: center;
-    font-family: $Raleway;
+    background-color: #cf4646;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
+    h1 {
+        color: #336EE8;
+        text-align: center;
+        font-family: $oswald;
+        text-transform: uppercase;
+        font-size: 50px;
+        margin-top: 40px;
+    } 
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: $tablet-portrait) {
+    .g-dangit {
+        h1 {
+            font-size: 150px;
+            margin-top: 240px;
+        }
+    }
 }
